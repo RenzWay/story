@@ -1,0 +1,49 @@
+/* Responsive styles for all pages */
+
+/* General styles for small screens */
+@media (max-width: 768px) {
+  .nav-homepage {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-homepage h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav-homepage-menu {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .container-story {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 1rem;
+  }
+
+  .register-form,
+  .login-form {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .map {
+    height: 100vh !important;
+  }
+
+  .container-add-page {
+    padding: 1rem;
+  }
+
+  .detail-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .image-detail-story {
+    width: 100%;
+    height: auto;
+  }
+}

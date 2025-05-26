@@ -1,0 +1,23 @@
+# Node.js modules
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS metadata files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE settings
+.vscode/
+.idea/
+
+# Environment files (kalau nanti kamu pakai)
+.env
+.env.local
+.env.*.local
