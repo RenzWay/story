@@ -1,7 +1,7 @@
 {
-  "id": "/#/",
-  "start_url": "/#/",
-  "scope": "/",
+  "id": "./#/",
+  "start_url": "./#/",
+  "scope": "./",
   "name": "Story App",
   "short_name": "Story",
   "description": "Story App adalah aplikasi berbasis web yang memungkinkan pengguna untuk melihat, menambahkan, dan menyimpan cerita dengan lokasi. Aplikasi ini dibangun sebagai SPA (Single Page Application), mendukung Push Notification, mendukung mode offline melalui PWA, dan menggunakan IndexedDB untuk menyimpan data secara lokal.",
@@ -25,7 +25,7 @@
       "name": "Tambah cerita",
       "short_name": "Tambah",
       "description": "langsung menuju halaman tambah cerita",
-      "url": "/#/add",
+      "url": "./#/add",
       "icons": [
         {
           "src": "add-story.png",
