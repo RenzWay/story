@@ -1,5 +1,4 @@
-import * as idb from "idb";
-import { openDB, deleteDB } from "idb";
+import { openDB } from "idb";
 
 const DB_NAME = "story-app-db";
 const STORE_NAME = "stories";
@@ -14,7 +13,7 @@ const dbPromise = openDB(DB_NAME, DB_VERSION, {
 export const idbStory = {
   async getAll() {
     return (await dbPromise).getAll(STORE_NAME);
-  }, 
+  },
   async get(id) {
     return (await dbPromise).get(STORE_NAME, id);
   },

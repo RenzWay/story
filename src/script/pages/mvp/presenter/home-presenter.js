@@ -7,7 +7,7 @@ export default class HomePresenter {
   }
 
   async init() {
-    this.view.logout(this.handleLogut);
+    this.view.logout(this.handleLogout);
     this.view.toggleLoading(true);
     try {
       const storiesData = await this.model.getData();
@@ -101,7 +101,7 @@ export default class HomePresenter {
     return new Uint8Array(rawData.split("").map((char) => char.charCodeAt(0)));
   }
 
-  handleLogut = () => {
+  handleLogout = () => {
     this.model.logout();
   };
 }

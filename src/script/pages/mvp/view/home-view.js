@@ -40,7 +40,6 @@ export class storyView {
       return;
     }
 
-    // Simpan semua story ke IndexedDB
     for (const story of storiesData) {
       await idbStory.put(story);
     }

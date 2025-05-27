@@ -14,7 +14,6 @@ export default class DetailPresenter {
   async init() {
     try {
       const story = await this.model.getDetail(API_STORY);
-      // Simpan ke IndexedDB
       await idbStory.put(story);
 
       this.view.showDetail(story, async () => {

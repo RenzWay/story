@@ -25,7 +25,7 @@
       "name": "Tambah cerita",
       "short_name": "Tambah",
       "description": "langsung menuju halaman tambah cerita",
-      "url": "./#/add",
+      "url": "/#/add",
       "icons": [
         {
           "src": "add-story.png",
@@ -69,6 +69,11 @@
     {
       "src": "ss/ss-map.png",
       "sizes": "540x720",
+      "type": "image/png"
+    },
+    {
+      "src": "ss/ss-desktop.png",
+      "sizes": "1280x800",
       "type": "image/png"
     }
   ]
