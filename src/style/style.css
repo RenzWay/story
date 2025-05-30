@@ -71,6 +71,32 @@
   transform: translateY(0);
 }
 
+.save-offline-btn {
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.save-offline-btn:disabled {
+  background-color: #90caf9;
+  color: #eee;
+  cursor: not-allowed;
+}
+
+.save-offline-btn:hover:not(:disabled) {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
+}
+
 .map-home {
   width: 100% !important;
   height: 100vh !important;
@@ -648,5 +674,3 @@ footer {
 .hidden {
   display: none;
 }
-
-/*  */

@@ -40,10 +40,6 @@ export class storyView {
       return;
     }
 
-    for (const story of storiesData) {
-      await idbStory.put(story);
-    }
-
     storiesData.forEach((story) => {
       storiesContainer.innerHTML += `
         <li onclick="location.hash='#/detail/${
@@ -64,20 +60,23 @@ export class storyView {
               <small>latitude: ${story.lat}</small><br>
               <small>longtitude: ${story.lon}</small>
             </div>
-            <button class="delete-offline-btn" data-id="${
+            <button class="save-offline-btn" data-id="${
               story.id
-            }">Hapus Offline</button>
+            }">Simpan Offline</button>
           </div>
         </li>`;
     });
 
-    // Event listener untuk hapus story dari IndexedDB
-    storiesContainer.querySelectorAll(".delete-offline-btn").forEach((btn) => {
+    storiesContainer.querySelectorAll(".save-offline-btn").forEach((btn) => {
       btn.addEventListener("click", async (e) => {
         e.stopPropagation();
         const id = btn.getAttribute("data-id");
-        await idbStory.delete(id);
-        btn.closest("li").remove();
+        const story = storiesData.find((s) => s.id === id);
+        if (story) {
+          await idbStory.put(story);
+          btn.textContent = "Tersimpan";
+          btn.disabled = true;
+        }
       });
     });
 

@@ -32,7 +32,7 @@ self.addEventListener("push", function (event) {
 
   const title = data.title || "Judul Notifikasi";
   const options = {
-    body: data.body || "Isi notifikasi...",
+    body: data.options.body || "Isi notifikasi...",
   };
 
   event.waitUntil(self.registration.showNotification(title, options));
