@@ -1,0 +1,80 @@
+{
+  "id": "./#/",
+  "start_url": "./#/",
+  "scope": "./",
+  "name": "Story App",
+  "short_name": "Story",
+  "description": "Story App adalah aplikasi berbasis web yang memungkinkan pengguna untuk melihat, menambahkan, dan menyimpan cerita dengan lokasi. Aplikasi ini dibangun sebagai SPA (Single Page Application), mendukung Push Notification, mendukung mode offline melalui PWA, dan menggunakan IndexedDB untuk menyimpan data secara lokal.",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "icon-story.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-story.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tambah cerita",
+      "short_name": "Tambah",
+      "description": "langsung menuju halaman tambah cerita",
+      "url": "/#/add",
+      "icons": [
+        {
+          "src": "add-story.png",
+          "sizes": "92x92",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "ss/ss-register.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    },
+    {
+      "src": "ss/ss-login.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    },
+    {
+      "src": "ss/ss-homepage.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    },
+    {
+      "src": "ss/ss-home.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    },
+    {
+      "src": "ss/ss-detail.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    },
+    {
+      "src": "ss/ss-add.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    },
+    {
+      "src": "ss/ss-map.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    },
+    {
+      "src": "ss/ss-desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png"
+    }
+  ]
+}
